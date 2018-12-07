@@ -1,0 +1,11 @@
+java.lang.IllegalArgumentException: non null hash key required
+	at org.springframework.util.Assert.notNull(Assert.java:115)
+	at org.springframework.data.redis.core.AbstractOperations.rawHashKey(AbstractOperations.java:147)
+	at org.springframework.data.redis.core.DefaultHashOperations.get(DefaultHashOperations.java:47)
+	at org.springframework.data.redis.core.DefaultBoundHashOperations.get(DefaultBoundHashOperations.java:54)
+	at com.pinyougou.search.service.impl.SearchServiceImpl.getBrandListAndSpecListFromRedis(SearchServiceImpl.java:79)
+	at com.pinyougou.search.service.impl.SearchServiceImpl.search(SearchServiceImpl.java:54)
+
+
+
+
